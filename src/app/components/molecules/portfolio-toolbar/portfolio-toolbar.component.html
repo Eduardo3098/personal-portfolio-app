@@ -1,0 +1,25 @@
+<mat-toolbar [@transitionFromTop]="{value:'in', params: {animDelay: 200}}"
+             (@transitionFromTop.done)='_onToolbarAnimationEnd($event)'
+             appWidgetWaterfall [waterfallReferenceTarget]="contentScroller"
+             waterfallReferenceLink="dashboard-content" waterfallActiveClass="active"
+             class="junkie-top-nav tb-position--absolute tb-width--full tb-z-index--3 tb-padding--v-4">
+  <mat-toolbar-row>
+    <a class="tb-a--unset" matRipple routerLink="/">
+      <div ngClass.gt-xs="logo_area tb-padding--8-24" ngClass.xs="logo_area tb-padding--0" fxLayout="row"
+           fxLayoutAlign="start center" fxLayoutGap="12px">
+        <img class="image logo" width="63" height="56" src="assets/svg/logo/ea_logo.png" alt="assets/svg/logo/ea_logo.png">
+      </div>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="tb-height--full">
+  <mat-sidenav-content fxLayout="column">
+    <div class="tb-height--full" fxLayout="column">
+      <!--  tb-color-bg--white -->
+      <div fxFlex cdkScrollable class="tb-height--full tb-overflow--auto" id="dashboard-container"
+           #contentScroller>
+        <router-outlet #outlet></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
