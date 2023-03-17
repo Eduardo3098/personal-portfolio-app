@@ -1,0 +1,26 @@
+<div [@transitionReveal]="{value:_mTriggerAnim, params: {animDelay: 500}}" class="main tb-position--relative tb-overflow--hidden" ngClass.xs="xs" ngClass.sm="sm"  #animRefView>
+  <div class="footer tb-container tb-position--relative" fxLayout="column">
+    <div class="tb-height--48"> </div>
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="start center" fxLayoutGap.lt-md="12px">
+      <div class="company" fxFlex fxFlex.lt-md="none" fxLayout="row" fxLayoutAlign="start end" fxLayoutGap="12px">
+        <h5 class="company-name tb-color--black-38 tb-typo--h5" ngClass.xs="xs">Desarrollado en <span class="tb-color--black">Angular 15.</span>
+        </h5>
+      </div>
+    </div>
+    <div class="tb-height--56"> </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
+      <p class="tb-cursor--pointer tb-typo--body2 tb-color--grey-500">
+        © {{date | date: 'yyyy'}} Copyright | Eduardo Albuja.</p>
+      <div fxFlex> </div>
+      <div class="social-area" fxLayoutGap="40px" fxLayout="row" fxLayoutAlign="center center">
+        <div class="social" fxLayoutGap="40px" fxLayout="row" fxLayoutAlign="center center"
+             fxLayoutAlign.lt-sm="end end">
+          <portfolio-button-svg svgIcon="github" href="https://github.com/Eduardo3098"></portfolio-button-svg>
+          <portfolio-button-svg svgIcon="linkedin" href="https://www.linkedin.com/in/ealbuja0133/"></portfolio-button-svg>
+          <portfolio-button-svg svgIcon="instagram" href="https://www.instagram.com/albujaeduardo1722/"></portfolio-button-svg>
+        </div>
+      </div>
+    </div>
+    <div class="tb-height--20"> </div>
+  </div>
+</div>
