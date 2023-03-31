@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import {PortfolioButtonSvgComponent} from "../../atoms/portfolio-button-svg/portfolio-button-svg.component";
 import { AboutComponent } from './about/about.component';
 import {MatButtonModule} from "@angular/material/button";
+import { ExpertiseComponent } from './expertise/expertise.component';
+import { ItemComponent } from './expertise/item/item.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import {MatButtonModule} from "@angular/material/button";
     HomeComponent,
     TopComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ExpertiseComponent,
+    ItemComponent
   ],
   imports: [
     CommonModule,
