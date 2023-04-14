@@ -1,0 +1,74 @@
+@function hexToCssRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@function color($color-name) {
+  @return var(--#{$color-name});
+}
+
+:host {
+  --app-primary: blue;
+  --app-primary--rgb: #{hexToCssRGB(#0000ff)};
+}
+
+.main {
+  margin: 8px 0;
+
+  .background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -8px;
+    right: -6px;
+  }
+  .content {
+    box-sizing: border-box;
+    z-index: 1;
+    margin: 28px 0;
+  }
+
+  .image-area {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      max-width: 100%;
+      box-sizing: border-box;
+      border: 2px solid var(--app-primary);
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &.sm {
+    .content {
+    }
+
+    .image-area {
+      height: 268px;
+    }
+  }
+
+  &.xs {
+    width: 100%;
+    .content {
+    }
+
+    .image-area {
+      height: unset;
+      width: 100%;
+      .image {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.unlink{
+  text-decoration: unset;
+}
