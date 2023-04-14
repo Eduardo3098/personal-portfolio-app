@@ -1,1 +1,9 @@
-import 'jest-preset-angular/setup-jest';
+//import 'jest-preset-angular/setup-jest';
+
+Object.defineProperty(window, 'getComputedStyle', {
+  value: () => ({
+    getPropertyValue: () => {
+      return '';
+    }
+  })
+});

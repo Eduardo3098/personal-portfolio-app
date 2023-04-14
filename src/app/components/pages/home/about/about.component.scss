@@ -1,8 +1,7 @@
 .main {
-  // overflow-x: hidden;
   .container {
     box-sizing: border-box;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
   .line {
     height: 2px;
@@ -23,9 +22,7 @@
 
   .image-area {
     position: relative;
-    // max-height: 63vh;
     height: 100%;
-    // width: 200px;
     min-width: 200px;
     display: flex;
     padding: 20px 56px;
@@ -44,11 +41,9 @@
   .skill {
     border-radius: 50rem;
     padding: 12px 16px;
-    // margin: 4px;
   }
 
   .btn-area-cv {
-    // z-index: 2;
     position: relative;
 
     > * {
@@ -56,7 +51,6 @@
     }
 
     &::after {
-      // z-index: -1;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -74,11 +68,8 @@
 
   .btn-area-hire {
     padding-top: 6px;
-    // margin-bottom: 4px;
     .btn-hire {
       padding: 10px 28px;
-
-      // background: rgba(color(color-gitter--rgb), 0.05);
       border: solid 1px #000000;
       border-radius: 4px;
     }

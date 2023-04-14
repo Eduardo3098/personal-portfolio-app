@@ -1,4 +1,4 @@
-import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, NgZone,ViewChild} from '@angular/core';
 import {TRANSITION_REVEAL} from "../../../../ui/animations/transitions/transitions.constants";
 import {
   distinctUntilChanged,
@@ -26,7 +26,6 @@ import {UiUtilsView} from "../../../../ui/utils/views.utils";
 export class FooterComponent implements AfterViewInit {
   date: Date;
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
-  _mHover: boolean = false;
   _mThreshold = 0.4
   mOnceAnimated = false
   _mTriggerAnim?= 'false'

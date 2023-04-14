@@ -8,7 +8,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PortfolioButtonSvgComponent ]
+      imports: [PortfolioButtonSvgComponent]
     })
     .compileComponents();
 

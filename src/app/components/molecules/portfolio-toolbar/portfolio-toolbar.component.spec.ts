@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortfolioToolbarComponent } from './portfolio-toolbar.component';
+import {RouterTestingModule} from "@angular/router/testing";
+import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('PortfolioToolbarComponent', () => {
   let component: PortfolioToolbarComponent;
@@ -8,7 +10,11 @@ describe('PortfolioToolbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ PortfolioToolbarComponent ]
+      imports: [ PortfolioToolbarComponent,
+        RouterTestingModule.withRoutes([]),
+        BrowserAnimationsModule,
+        NoopAnimationsModule
+      ]
     })
     .compileComponents();
 

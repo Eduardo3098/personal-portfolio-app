@@ -17,10 +17,7 @@
   position: relative;
   z-index: 1;
   border-top: 1px solid #0000000c;
-  // background-color: #151515;
 }
-
-
 
 .footer{
 }
@@ -43,15 +40,10 @@
 
 .logo {
   max-width: 40px;
-  // position: absolute;
   top: 0;
   left: 0;
 }
-// .social {
-//   position: absolute;
-//   top: 0;
-//   right: 32px;
-// }
+
 .main {
   &.xs {
     .social {
@@ -64,8 +56,6 @@
   font-size: 4rem !important;
 }
 .next-btn {
-  // filter: drop-shadow(0px 8px 4px rgba(0, 76, 255,0.6));
-
   img {
     max-width: 90px;
   }
@@ -105,24 +95,16 @@
 
 
 .link-btn {
-  // padding: 12px 16px;
 
   &.gitter {
-    // background: rgba(color(color-gitter--rgb), 0.05);
-    // border: solid 1px var(--color-gitter);
-
     .icon {
       color: var(--color-gitter);
     }
   }
 
   &.discord {
-    // background: rgba(color(color-discord--rgb), 0.05);
-    // border: solid 1px var(--color-discord);
-
     .icon {
       color: var(--color-discord);
     }
   }
 }
-

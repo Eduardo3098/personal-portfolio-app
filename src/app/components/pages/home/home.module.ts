@@ -11,7 +11,9 @@ import { AboutComponent } from './about/about.component';
 import {MatButtonModule} from "@angular/material/button";
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { ItemComponent } from './expertise/item/item.component';
-
+import { ShowcasesComponent } from './showcases/showcases.component';
+import { AppComponent } from './showcases/app/app.component';
+import { ItemComponent as AppItemComponent} from './showcases/app/item/item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { ItemComponent } from './expertise/item/item.component';
     FooterComponent,
     AboutComponent,
     ExpertiseComponent,
-    ItemComponent
+    ItemComponent,
+    ShowcasesComponent,
+    AppComponent,
+    AppItemComponent
   ],
   imports: [
     CommonModule,
